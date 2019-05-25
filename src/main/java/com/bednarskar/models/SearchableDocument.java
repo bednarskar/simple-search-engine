@@ -3,10 +3,14 @@ package com.bednarskar.models;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Document model
+ */
 public class SearchableDocument {
-
+    // delivered from outside
     private String id;
     private String content;
+    // needed to generate reverted index for search tool. TfIdf is calculated only during indexing and not saved permanently.
     private Map<String, Double> tokens;
     private Map<String, Double> tf;
     private Map<String, Double> tfIdf;

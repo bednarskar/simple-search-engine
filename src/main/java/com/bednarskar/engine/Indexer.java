@@ -5,8 +5,13 @@ import com.bednarskar.models.SearchableDocument;
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * Class for operations on reverted index.
+ */
 public class Indexer {
+    // index is a map of token and assigned to them DocumentIds .
     private Map<String, List<String>> index;
+    // documents is map where key is DocumentId and value is document with content and statistics used by search tool to rank results.
     private Map<String, SearchableDocument> documents;
 
     public Indexer(Map<String, SearchableDocument> documents){
@@ -14,6 +19,10 @@ public class Indexer {
         this.documents = documents;
     }
 
+    /**
+     * main method of indexer. Returns prepared reverted index sorted by ranks.
+     * @return
+     */
     public Map<String, List<String>> index(){
         IndexProvider indexProvider = new IndexProvider(this.index);
         this.index = indexProvider.populateIndex(this.documents).getIndex();
@@ -31,6 +40,9 @@ public class Indexer {
 
     }
 
+    /**
+     * inner class to process index
+     */
     class IndexProvider {
 
         private Map<String, List<String>> index;
@@ -39,6 +51,11 @@ public class Indexer {
             this.index = index;
         }
 
+        /**
+         * load documents to index initially.
+         * @param searchableDocumentMap
+         * @return
+         */
         public IndexProvider populateIndex(Map<String, SearchableDocument> searchableDocumentMap){
             for(SearchableDocument d: searchableDocumentMap.values()) {
                 for(String s : d.getTokens().keySet()) {
@@ -56,6 +73,11 @@ public class Indexer {
             return this;
         }
 
+        /**
+         * sorting documents for each token by comparing TfIdf parameter.
+         * @param documents
+         * @return
+         */
         public IndexProvider rankIndexEntries(Map<String, SearchableDocument> documents){
             this.index.entrySet().forEach(el -> {
                 el.setValue(el.getValue().stream().sorted(new Comparator<String>() {
