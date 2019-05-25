@@ -27,16 +27,8 @@ public class SearchableDocument {
         return id;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
-
     public String getContent() {
         return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
     }
 
     public Map<String, Double> getTokens() {
@@ -50,7 +42,9 @@ public class SearchableDocument {
     public Map<String, Double> getTfIdf() {
         if (tfIdf != null){
             return tfIdf;
-        } else return new HashMap<>();
+        } else {
+            return new HashMap<>();
+        }
     }
 
     public void setTfIdf(Map<String, Double> tfIdf) {

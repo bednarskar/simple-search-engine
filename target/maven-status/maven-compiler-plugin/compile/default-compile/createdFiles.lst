@@ -2,10 +2,7 @@ com/bednarskar/utils/DocumentsLoader.class
 com/bednarskar/App2.class
 com/bednarskar/models/SearchableDocument.class
 com/bednarskar/engine/SearchableDocumentsProcessor$SingleSearchableDocumentProcessor.class
-com/bednarskar/App$2.class
 com/bednarskar/engine/Indexer.class
-com/bednarskar/App$1.class
 com/bednarskar/engine/SearchableDocumentsProcessor.class
 com/bednarskar/engine/Indexer$IndexProvider$1.class
-com/bednarskar/App.class
 com/bednarskar/engine/Indexer$IndexProvider.class

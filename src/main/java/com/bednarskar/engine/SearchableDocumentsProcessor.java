@@ -22,6 +22,8 @@ public class SearchableDocumentsProcessor {
     private static SparkConf sparkConf;
     private static JavaSparkContext sparkContext;
     private static SearchableDocumentsProcessor searchableDocumentsProcessor = new SearchableDocumentsProcessor();
+    private static final int SLICES_NUMBER = 1;
+    private static final double ONE = 1;
 
     public static SearchableDocumentsProcessor getInstance() {
         return searchableDocumentsProcessor;
@@ -38,6 +40,7 @@ public class SearchableDocumentsProcessor {
      */
     public Map<String, SearchableDocument> preProcess(Map<String, SearchableDocument> documents){
         Map<String, SearchableDocument> processed = new HashMap<>();
+
         for(String key : documents.keySet()) {
 
             SingleSearchableDocumentProcessor singleSearchableDocumentProcessor = new SingleSearchableDocumentProcessor(documents.get(key));
@@ -47,6 +50,7 @@ public class SearchableDocumentsProcessor {
                     .calculateTermFrequency()
                     .getProcessedSearchableDocument());
         }
+
         return processed;
     }
 
@@ -59,12 +63,14 @@ public class SearchableDocumentsProcessor {
      */
     public Map<String, SearchableDocument> postProcess(Map<String, SearchableDocument> documents, Double idf, Map.Entry<String, List<String>> indexElement) {
         Map<String, SearchableDocument> processed = new HashMap<>();
+
         for(String key : documents.keySet()) {
             SingleSearchableDocumentProcessor singleSearchableDocumentProcessor = new SingleSearchableDocumentProcessor(documents.get(key));
             processed.put(key, singleSearchableDocumentProcessor
                     .calculateTfIdf(idf, indexElement)
                     .getProcessedSearchableDocument());
         }
+
         return processed;
     }
 
@@ -88,12 +94,14 @@ public class SearchableDocumentsProcessor {
             SimpleTokenizer simpleTokenizer = SimpleTokenizer.INSTANCE;
             List<String> tokens = Arrays.asList(simpleTokenizer.tokenize(document.getContent().toLowerCase()));
             this.tokensQuantity = tokens.size();
-            JavaRDD<String> wordsInDocument = sparkContext.parallelize(tokens,1);
+
+            JavaRDD<String> wordsInDocument = sparkContext.parallelize(tokens,SLICES_NUMBER); //Magic Number -> dałbym jako constans w klasie
             JavaPairRDD countData = wordsInDocument
-                                            .mapToPair(t -> new Tuple2<>(t, 1.0))
+                                            .mapToPair(t -> new Tuple2<>(t, ONE)) //Magic number
                                                                 .reduceByKey((x, y) -> (Double) x + (Double) y);
             Map<String, Double> tokenQuantityMap = countData.collectAsMap();
             this.document.setTokens(tokenQuantityMap);
+
             return this;
         }
 
@@ -113,6 +121,7 @@ public class SearchableDocumentsProcessor {
                             e -> e.getKey(),
                             e -> e.getValue() / tokensQuantity));
             this.document.setTf(tf);
+
             return this;
         }
 
@@ -129,9 +138,13 @@ public class SearchableDocumentsProcessor {
             if (indexElement.getValue().contains(document.getId())) {
                 Map<String, Double> tfIdfMap = document.getTfIdf();
                 // add to existing TfIdf statistics of this document statistics about TfIdf calculated for given index token.
-                tfIdfMap.put(indexElement.getKey(), document.getTf().get(indexElement.getKey()) * idf);
+                tfIdfMap.put(
+                        indexElement.getKey(),
+                        document.getTf().get(indexElement.getKey()) * idf);
+
                 this.document.setTfIdf(tfIdfMap);
             }
+
             return this;
         }
 

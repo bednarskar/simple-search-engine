@@ -6,7 +6,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * Class for operations on reverted index.
+ * Class for operations on inverted index.
  */
 public class Indexer {
     // index is a map of token and assigned to them DocumentIds .
@@ -25,7 +25,10 @@ public class Indexer {
      */
     public Map<String, List<String>> index(){
         IndexProvider indexProvider = new IndexProvider(this.index);
-        this.index = indexProvider.populateIndex(this.documents).getIndex();
+        this.index = indexProvider
+                .populateIndex(this.documents)
+                .getIndex();
+
         SearchableDocumentsProcessor documentsProcessor = SearchableDocumentsProcessor.getInstance();
 
         // calculate idf for each index token and tfidf  for each document to rank them in index
@@ -34,7 +37,9 @@ public class Indexer {
             this.documents = documentsProcessor.postProcess(this.documents, idf, el);
         });
 
-        this.index = indexProvider.rankIndexEntries(this.documents).getIndex();
+        this.index = indexProvider
+                .rankIndexEntries(this.documents)
+                .getIndex();
 
         return this.index;
 
@@ -57,7 +62,8 @@ public class Indexer {
          * @return
          */
         public IndexProvider populateIndex(Map<String, SearchableDocument> searchableDocumentMap){
-            for(SearchableDocument d: searchableDocumentMap.values()) {
+            for(SearchableDocument d : searchableDocumentMap.values()) {
+
                 for(String s : d.getTokens().keySet()) {
                     if (this.index.containsKey(s)) {
                         List<String> docIds = this.index.get(s);
@@ -70,6 +76,7 @@ public class Indexer {
                     }
                 }
             }
+
             return this;
         }
 
@@ -79,14 +86,20 @@ public class Indexer {
          * @return
          */
         public IndexProvider rankIndexEntries(Map<String, SearchableDocument> documents){
-            this.index.entrySet().forEach(el -> {
-                el.setValue(el.getValue().stream().sorted(new Comparator<String>() {
-                    @Override
-                    public int compare(String o1, String o2) {
-                        return Double.compare(documents.get(o2).getTfIdf().get(el.getKey()),
-                                documents.get(o1).getTfIdf().get(el.getKey()));
-                    }
-                }).collect(Collectors.toList()));
+            this.index
+                    .entrySet()
+                    .forEach(el -> {
+                            el.setValue(el
+                                    .getValue()
+                                    .stream()
+                                    .sorted(new Comparator<String>() {
+                                        @Override
+                                        public int compare(String o1, String o2) {
+                                            String token = el.getKey();
+                                            return Double.compare(documents.get(o2).getTfIdf().get(token),
+                                                                  documents.get(o1).getTfIdf().get(token));
+                                        }
+                                    }).collect(Collectors.toList()));
             });
             return this;
         }

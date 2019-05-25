@@ -14,13 +14,15 @@ import java.util.Map;
 public class DocumentsLoader {
 
     private static final String COMMA_DELIMITER = ",";
+    private static final String IO_EXCEPTION_MESSAGE = "Path incorrect. Please retry.";
 
     /**
      * loading data from file.
      * @param csvPath
      * @return
      */
-    public Map<String, SearchableDocument> loadDocuments(String csvPath) {
+    public static Map<String, SearchableDocument> loadDocuments(String csvPath) {
+
         Map<String, SearchableDocument> documents = new HashMap<>();
         try {
             BufferedReader br = new BufferedReader(new FileReader(csvPath));
@@ -33,7 +35,7 @@ public class DocumentsLoader {
                 }
             }
         } catch (IOException e) {
-            System.out.println("Path incorrect. Please retry.");
+            System.out.println(IO_EXCEPTION_MESSAGE);
         }
 
         return documents;
