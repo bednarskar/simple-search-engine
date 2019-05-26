@@ -95,9 +95,9 @@ public class SearchableDocumentsProcessor {
             List<String> tokens = Arrays.asList(simpleTokenizer.tokenize(document.getContent().toLowerCase()));
             this.tokensQuantity = tokens.size();
 
-            JavaRDD<String> wordsInDocument = sparkContext.parallelize(tokens,SLICES_NUMBER); //Magic Number -> dałbym jako constans w klasie
+            JavaRDD<String> wordsInDocument = sparkContext.parallelize(tokens,SLICES_NUMBER);
             JavaPairRDD countData = wordsInDocument
-                                            .mapToPair(t -> new Tuple2<>(t, ONE)) //Magic number
+                                            .mapToPair(t -> new Tuple2<>(t, ONE))
                                                                 .reduceByKey((x, y) -> (Double) x + (Double) y);
             Map<String, Double> tokenQuantityMap = countData.collectAsMap();
             this.document.setTokens(tokenQuantityMap);

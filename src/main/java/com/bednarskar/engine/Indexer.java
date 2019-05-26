@@ -32,8 +32,8 @@ public class Indexer {
         SearchableDocumentsProcessor documentsProcessor = SearchableDocumentsProcessor.getInstance();
 
         // calculate idf for each index token and tfidf  for each document to rank them in index
-        index.entrySet().forEach(el -> {
-            Double idf = Math.log(this.documents.size()/el.getValue().size());
+        this.index.entrySet().forEach(el -> {
+            double idf = Math.log((Double.valueOf(this.documents.size()) / Double.valueOf(el.getValue().size())));
             this.documents = documentsProcessor.postProcess(this.documents, idf, el);
         });
 
