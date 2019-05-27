@@ -23,4 +23,4 @@ This SimpleSearchEngine is case insensitive. It can search for single tokens. qu
 
 To build use maven, than fat-jar simple-search-engine-1.0-SNAPSHOT-jar-with-dependencies.jar will be created.
 You can run it simply by java -jar simple-search-engine-1.0-SNAPSHOT-jar-with-dependencies.jar
-:q is closing application.
+            :q is closing application.
