@@ -24,10 +24,10 @@ public class SimpleSearchEngine
     private static Scanner scanner = new Scanner(System.in);
 
 
-    private static final String ENTER_QUERY = "Enter query you want to search or :q to quit.";
-    private static final String NO_DOCUMENTS = "No documents. Do you want to retry and type path again(y/n)?";
+    private static final String ENTER_QUERY = "Enter query you want to search or :q to checkIfWantToQuit.";
+    private static final String NO_DOCUMENTS = "No documents. Do you want to retry and type path again (y/n)?";
     private static final String YES ="Y";
-    private static final String ENTER_PATH = "Enter path to csv with documents to feed search tool.";
+    private static final String ENTER_PATH = "Enter path to csv with documents to feed search tool, or :q to checkIfWantToQuit";
     private static final String NO_RESULTS = "No results found for given query.";
     private static final String QUIT = ":q";
 
@@ -50,6 +50,7 @@ public class SimpleSearchEngine
     protected static void getUserInputAndLoadData() {
         System.out.println(ENTER_PATH);
         String path = scanner.nextLine();  // Read user input
+        checkIfWantToQuit(path);
 
         documents = DocumentsLoader.loadDocuments(path);
 
@@ -57,9 +58,10 @@ public class SimpleSearchEngine
             System.out.println(NO_DOCUMENTS);
             String decision = scanner.nextLine();
 
-            if (decision.equalsIgnoreCase(YES)) {
+            if (decision.equalsIgnoreCase(YES) || decision.equalsIgnoreCase(QUIT)) {
                 System.out.println(ENTER_PATH);
                 path = scanner.nextLine();  // Read user input
+                checkIfWantToQuit(path);
                 documents = DocumentsLoader.loadDocuments(path);
             } else {
                 System.exit(0);
@@ -74,12 +76,9 @@ public class SimpleSearchEngine
         while (true) {
             System.out.println(ENTER_QUERY);
             String query = scanner.nextLine();  // Read user input
+            checkIfWantToQuit(query);
 
-            if (query.equals(QUIT)) {
-                System.exit(0);
-            }
-
-            List<String> results = index.get(query.toLowerCase());
+            List<String> results = index.get(query.toLowerCase().trim());
 
             if (results!= null && !index.isEmpty()) {
                 System.out.println("Found " + results.size() + " documents: ");
@@ -93,5 +92,9 @@ public class SimpleSearchEngine
                 System.out.println(NO_RESULTS);
             }
         }
+    }
+
+    protected static void checkIfWantToQuit(String command) {
+        if (command.equals(QUIT)) System.exit(0);
     }
 }
