@@ -16,7 +16,7 @@ import java.util.Scanner;
  * It should be csv delimited by , with stucture documentId,content
  * This search tool is case insensitive and can be queried by typing single terms.
  */
-public class App2
+public class SimpleSearchEngine
 {
 
     private static Map<String, SearchableDocument> documents;

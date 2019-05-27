@@ -1,6 +1,5 @@
 package com.bednarskar.utils;
 
-import com.bednarskar.App2;
 import com.bednarskar.models.SearchableDocument;
 
 import java.io.BufferedReader;

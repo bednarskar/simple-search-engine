@@ -114,7 +114,7 @@ public class SearchableDocumentProcessorTest {
         Double idf = Math.log(documentsForPostProcessingTest.size() / 2.0);
 
         Map<String, SearchableDocument> postProcesed = processor.postProcess(documentsForPostProcessingTest, idf, indexElement1);
-        Assert.assertTrue(postProcesed.get("id11").getTfIdf().get("a") == documents.get("id11").getTf().get("a") * idf);
+        Assert.assertTrue(postProcesed.get("id11").getTfIdf().get("a") == documentsForPostProcessingTest.get("id11").getTf().get("a") * idf);
     }
 
 }
