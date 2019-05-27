@@ -28,6 +28,7 @@ public class SearchableDocumentsProcessor {
     public static SearchableDocumentsProcessor getInstance() {
         return searchableDocumentsProcessor;
     }
+
     private SearchableDocumentsProcessor() {
         sparkConf = new SparkConf().setMaster("local").setAppName("Tokenizer");
         sparkContext = new JavaSparkContext(sparkConf);
@@ -87,7 +88,7 @@ public class SearchableDocumentsProcessor {
 
 
         /**
-         * Method generates tokens for document using SimpleTokenizer and than use Spark to generate word count.
+         * Method generates tokens for document using SimpleTokenizer and then use Spark to generate word count.
          * @return SingleSearchableDocumentProcessor
          */
         public SingleSearchableDocumentProcessor calculateTokens() {
@@ -108,7 +109,7 @@ public class SearchableDocumentsProcessor {
         /**
          * Tf is a term frequency parameter.
          * TF(t) = (Number of times term t appears in a document) / (Total number of terms in the document).
-         * Method calculates Tf parameter for each term found in it and populates map of tokens and their frequency in document.
+         * Method calculates Tf parameter for each term found in document and populates map of tokens and their frequency in given document.
          * @return
          */
         public SingleSearchableDocumentProcessor calculateTermFrequency() {
@@ -140,7 +141,10 @@ public class SearchableDocumentsProcessor {
                 // add to existing TfIdf statistics of this document statistics about TfIdf calculated for given index token.
                 tfIdfMap.put(
                         indexElement.getKey(),
-                        document.getTf().get(indexElement.getKey()) * idf);
+                        document.getTf()
+                                .get(
+                                        indexElement.getKey()) *
+                                idf);
 
                 this.document.setTfIdf(tfIdfMap);
             }

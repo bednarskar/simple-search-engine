@@ -34,7 +34,6 @@ public class App2
     public static void main( String[] args ) {
         System.out.println("Simple search engine started!");
         getUserInputAndLoadData();
-        
 
         SearchableDocumentsProcessor documentsProcessor = SearchableDocumentsProcessor.getInstance();
         documents = documentsProcessor.preProcess(documents);
@@ -48,7 +47,7 @@ public class App2
     /**
      * interact with user, get user input and read data from given file.
      */
-    private static void getUserInputAndLoadData() {
+    protected static void getUserInputAndLoadData() {
         System.out.println(ENTER_PATH);
         String path = scanner.nextLine();  // Read user input
 
@@ -71,7 +70,7 @@ public class App2
     /**
      * query term and present results or exit
      */
-    private static void queryTerm() {
+    protected static void queryTerm() {
         while (true) {
             System.out.println(ENTER_QUERY);
             String query = scanner.nextLine();  // Read user input

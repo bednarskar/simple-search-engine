@@ -20,7 +20,7 @@ public class Indexer {
     }
 
     /**
-     * main method of indexer. Returns prepared reverted index sorted by ranks.
+     * main method of indexer. Returns prepared inverted index sorted by ranks.
      * @return
      */
     public Map<String, List<String>> index(){

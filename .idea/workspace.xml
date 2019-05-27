@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/test/java/com/bednarskar/engine/IndexerTest.java" />
+    <bookmark url="file://$PROJECT_DIR$/src/test/java/com/bednarskar/engine/SearchableDocumentProcessorTest.java" line="75" />
+    <bookmark url="file://$PROJECT_DIR$/src/test/java/com/bednarskar/engine/SearchableDocumentProcessorTest.java" line="99" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="3092c0e1-8bdb-4c1e-8e67-a692a3085f2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/bednarskar/engine/IndexerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/bednarskar/engine/SearchableDocumentProcessorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bednarskar/App2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bednarskar/App2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bednarskar/engine/Indexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bednarskar/engine/Indexer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bednarskar/engine/SearchableDocumentsProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bednarskar/engine/SearchableDocumentsProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/bednarskar/engine/Indexer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bednarskar/App2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bednarskar/App2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bednarskar/engine/Indexer$IndexProvider$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bednarskar/engine/Indexer$IndexProvider$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bednarskar/engine/Indexer$IndexProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bednarskar/engine/Indexer$IndexProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bednarskar/engine/Indexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bednarskar/engine/Indexer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bednarskar/engine/SearchableDocumentsProcessor$SingleSearchableDocumentProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bednarskar/engine/SearchableDocumentsProcessor$SingleSearchableDocumentProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bednarskar/engine/SearchableDocumentsProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bednarskar/engine/SearchableDocumentsProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bednarskar/models/SearchableDocument.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bednarskar/models/SearchableDocument.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bednarskar/utils/DocumentsLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bednarskar/utils/DocumentsLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/simple-search-engine-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.bednarskar.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.bednarskar.AppTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.bednarskar.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.bednarskar.AppTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bednarskar/utils/DocumentsLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bednarskar/utils/DocumentsLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bednarskar/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bednarskar/engine/IndexerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bednarskar/engine/IndexerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/bednarskar/engine/IndexerTest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bednarskar/App2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="118" column="53" selection-start-line="118" selection-start-column="53" selection-end-line="118" selection-end-column="53" />
+            <state relative-caret-position="-419">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,10 +43,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bednarskar/App2.java">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-389">
-              <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+            <state relative-caret-position="360">
+              <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bednarskar/utils/DocumentsLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/bednarskar/engine/IndexerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-899">
+              <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,8 +78,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bednarskar/engine/Indexer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="98" selection-start-line="98" selection-end-line="98" />
+            <state relative-caret-position="-779">
+              <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/bednarskar/engine/SearchableDocumentProcessorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="541">
+              <caret line="102" column="76" lean-forward="true" selection-start-line="102" selection-start-column="76" selection-end-line="102" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,36 +102,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bednarskar/engine/SearchableDocumentsProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-374">
-              <caret line="99" column="81" selection-start-line="99" selection-start-column="81" selection-end-line="99" selection-end-column="81" />
+            <state relative-caret-position="376">
+              <caret line="116" column="45" lean-forward="true" selection-start-line="116" selection-start-column="45" selection-end-line="116" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3127#3128#0" expanded="true" />
                 <element signature="e#3175#3176#0" expanded="true" />
-                <element signature="e#6116#6117#0" expanded="true" />
-                <element signature="e#6160#6161#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bednarskar/models/SearchableDocument.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bednarskar/utils/DocumentsLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+            <state relative-caret-position="555">
+              <caret line="45" column="35" lean-forward="true" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -147,16 +163,20 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bednarskar/utils/DocumentLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bednarskar/engine/RevertedIndexGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bednarskar/App.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/bednarskar/utils/UserInteractions.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bednarskar/models/SearchableDocument.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bednarskar/App2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bednarskar/utils/DocumentsLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bednarskar/engine/SingleSearchableDocumentProcessor.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/bednarskar/engine/Indexer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bednarskar/engine/Indexer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bednarskar/engine/SearchableDocumentsProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bednarskar/engine/SearchableDocumentsProcessoror.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/bednarskar/engine/SearchableDocumentProcessor.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bednarskar/utils/DocumentsLoader.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/bednarskar/AppTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/bednarskar/engine/IndexerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/bednarskar/engine/SearchableDocumentProcessorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bednarskar/App2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bednarskar/engine/SearchableDocumentsProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bednarskar/engine/Indexer.java" />
       </list>
     </option>
   </component>
@@ -251,15 +271,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bednarskar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simplesearchengine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simplesearchengine" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bednarskar" type="462c0819:PsiDirectoryNode" />
               <item name="engine" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -301,10 +312,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.simple-search-engine [clean,package]">
+  <component name="RunManager" selected="JUnit.Unnamed (2)">
     <configuration name="App2" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bednarskar.App2" />
       <module name="simplesearchengine" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed (1)" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="simplesearchengine" />
+      <option name="PACKAGE_NAME" value="com.bednarskar.engine" />
+      <option name="MAIN_CLASS_NAME" value="com.bednarskar.engine.SearchableDocumentProcessorTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed (2)" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="simplesearchengine" />
+      <option name="PACKAGE_NAME" value="com.bednarskar" />
+      <option name="MAIN_CLASS_NAME" value="com.bednarskar.AppTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -348,6 +381,8 @@
     </configuration>
     <list>
       <item itemvalue="Application.App2" />
+      <item itemvalue="JUnit.Unnamed (1)" />
+      <item itemvalue="JUnit.Unnamed (2)" />
       <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="Maven.simple-search-engine [clean,package]" />
     </list>
@@ -366,35 +401,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unnamed - 2019.05.26 at 22h 11m 59s.xml">
-      <configuration name="Unnamed" configurationId="JUnit" />
+    <history-entry file="Unnamed_(1) - 2019.05.27 at 13h 08m 54s.xml">
+      <configuration name="Unnamed (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unnamed - 2019.05.26 at 22h 12m 57s.xml">
-      <configuration name="Unnamed" configurationId="JUnit" />
+    <history-entry file="Unnamed_(1) - 2019.05.27 at 13h 09m 10s.xml">
+      <configuration name="Unnamed (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unnamed - 2019.05.26 at 22h 13m 15s.xml">
-      <configuration name="Unnamed" configurationId="JUnit" />
+    <history-entry file="Unnamed_(1) - 2019.05.27 at 13h 09m 23s.xml">
+      <configuration name="Unnamed (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unnamed - 2019.05.26 at 22h 16m 12s.xml">
-      <configuration name="Unnamed" configurationId="JUnit" />
+    <history-entry file="Unnamed_(1) - 2019.05.27 at 13h 10m 03s.xml">
+      <configuration name="Unnamed (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unnamed - 2019.05.26 at 22h 17m 59s.xml">
-      <configuration name="Unnamed" configurationId="JUnit" />
+    <history-entry file="Unnamed_(1) - 2019.05.27 at 13h 11m 17s.xml">
+      <configuration name="Unnamed (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unnamed - 2019.05.26 at 22h 19m 47s.xml">
-      <configuration name="Unnamed" configurationId="JUnit" />
+    <history-entry file="Unnamed_(1) - 2019.05.27 at 14h 43m 22s.xml">
+      <configuration name="Unnamed (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unnamed - 2019.05.26 at 22h 21m 30s.xml">
-      <configuration name="Unnamed" configurationId="JUnit" />
+    <history-entry file="Unnamed_(2) - 2019.05.27 at 14h 43m 35s.xml">
+      <configuration name="Unnamed (2)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unnamed - 2019.05.26 at 22h 22m 01s.xml">
-      <configuration name="Unnamed" configurationId="JUnit" />
+    <history-entry file="Unnamed_(2) - 2019.05.27 at 14h 43m 44s.xml">
+      <configuration name="Unnamed (2)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unnamed - 2019.05.26 at 22h 23m 02s.xml">
-      <configuration name="Unnamed" configurationId="JUnit" />
+    <history-entry file="Unnamed_(2) - 2019.05.27 at 21h 30m 39s.xml">
+      <configuration name="Unnamed (2)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unnamed - 2019.05.26 at 22h 24m 10s.xml">
-      <configuration name="Unnamed" configurationId="JUnit" />
+    <history-entry file="Unnamed_(2) - 2019.05.27 at 21h 31m 00s.xml">
+      <configuration name="Unnamed (2)" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -430,78 +465,6 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/bednarskar/engine/Indexer.java</url>
-          <line>89</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/bednarskar/engine/Indexer.java</url>
-          <line>94</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/bednarskar/engine/Indexer.java</url>
-          <line>100</line>
-          <properties />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/bednarskar/engine/Indexer.java</url>
-          <line>101</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/bednarskar/engine/SearchableDocumentsProcessor.java</url>
-          <line>142</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/bednarskar/engine/SearchableDocumentsProcessor.java</url>
-          <line>144</line>
-          <properties />
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/bednarskar/engine/SearchableDocumentsProcessor.java</url>
-          <line>140</line>
-          <properties />
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/bednarskar/engine/SearchableDocumentsProcessor.java</url>
-          <line>141</line>
-          <properties />
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/bednarskar/engine/Indexer.java</url>
-          <line>36</line>
-          <properties />
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/bednarskar/engine/Indexer.java</url>
-          <line>37</line>
-          <properties />
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/bednarskar/engine/Indexer.java</url>
-          <line>35</line>
-          <properties />
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="jar://$USER_HOME$/narzedzia/java/jdk1.8.0_171/src.zip!/java/lang/Math.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -527,20 +490,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bednarskar/utils/UserInteractions.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/bednarskar/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bednarskar/engine/SingleSearchableDocumentProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -548,54 +497,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bednarskar/engine/Indexer.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/2.27.0/mockito-core-2.27.0.jar!/org/mockito/Mockito.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="98" selection-start-line="98" selection-end-line="98" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bednarskar/engine/SearchableDocumentsProcessor.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-374">
-          <caret line="99" column="81" selection-start-line="99" selection-start-column="81" selection-end-line="99" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3127#3128#0" expanded="true" />
-            <element signature="e#3175#3176#0" expanded="true" />
-            <element signature="e#6116#6117#0" expanded="true" />
-            <element signature="e#6160#6161#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="461">
+          <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bednarskar/models/SearchableDocument.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/bednarskar/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="465">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bednarskar/utils/DocumentsLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bednarskar/App2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-389">
-          <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+        <state relative-caret-position="251">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -604,8 +537,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/bednarskar/engine/IndexerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="118" column="53" selection-start-line="118" selection-start-column="53" selection-end-line="118" selection-end-column="53" />
+        <state relative-caret-position="-899">
+          <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/bednarskar/engine/SearchableDocumentProcessorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="102" column="76" lean-forward="true" selection-start-line="102" selection-start-column="76" selection-end-line="102" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bednarskar/App2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-419">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bednarskar/engine/SearchableDocumentsProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="116" column="45" lean-forward="true" selection-start-line="116" selection-start-column="45" selection-end-line="116" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3127#3128#0" expanded="true" />
+            <element signature="e#3175#3176#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bednarskar/engine/Indexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-779">
+          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bednarskar/models/SearchableDocument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="45" column="35" lean-forward="true" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
