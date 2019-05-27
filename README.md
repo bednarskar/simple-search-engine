@@ -5,7 +5,7 @@ This is simple search engine based on inverted index and TfIdf (http://www.tfidf
 As input to load data user is requested for path to csv file with structure like below 
 (no headers, just id and content, each record separated with new line):
 
-documentId,documentContent
+documentId,documentContent                                         
 documentId2,documentContent
 ...
 
